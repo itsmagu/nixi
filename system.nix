@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-    users.users.jane = {
+    users.users.hernet = {
       isNormalUser = true;
       extraGroups = [ "wheel" ];
       packages = with pkgs; [
