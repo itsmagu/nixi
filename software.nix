@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 
-{ import = [ ./packagebundles/common.nix ];
+{ imports = [ ./packagebundles/common.nix ];
     
 }
