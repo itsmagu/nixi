@@ -5,14 +5,12 @@
       isNormalUser = true;
       extraGroups = [ "wheel" ];
       packages = with pkgs; [
-        neovim
+        vim
       ];
     };
 
     environment.systemPackages = with pkgs; [
-      vim
       git
-      ranger
       wget
     ];
 }
