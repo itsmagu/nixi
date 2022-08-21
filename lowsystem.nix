@@ -2,7 +2,7 @@
 
 {
     boot.plymouth = {
-        enable = true;
+        enable = false;
     };
 
     boot.loader.systemd-boot.enable = true;
