@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   boot.initrd.availableKernelModules = [ "sd_mod" "sr_mod" ];
