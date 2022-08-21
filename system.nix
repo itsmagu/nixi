@@ -6,6 +6,7 @@
       extraGroups = [ "wheel" ];
       packages = with pkgs; [
         vim
+        alacritty
       ];
     };
 
