@@ -2,7 +2,7 @@
 
 {
   boot.initrd.availableKernelModules = [ "sd_mod" "sr_mod" ];
-  boot.initrd.kernelModules = [ ];
+  boot.initrd.kernelModules = [ "hv_vmbus" "hv_storvsc" ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
@@ -24,5 +24,5 @@
 
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
   virtualisation.hypervGuest.enable = true;
-  #boot.kernel.sysctl."vm.overcommit_memory" = "1";
+  boot.kernel.sysctl."vm.overcommit_memory" = "1";
 }
