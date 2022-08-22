@@ -2,7 +2,7 @@
 
 {
   boot.initrd.availableKernelModules = [ "sd_mod" "sr_mod" ];
-  boot.initrd.kernelModules = [ "hv_vmbus" "hv_storvsc" ];
+  boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
@@ -11,14 +11,12 @@
       fsType = "ext4";
     };
 
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/0E17-4F0B";
+  fileSystems."/boot/efi" =
+    { device = "/dev/disk/by-uuid/57B0-B3B9";
       fsType = "vfat";
     };
 
-  swapDevices =
-    [ { device = "/dev/disk/by-uuid/054240bc-70ee-46fe-ba24-0204f1b8d991"; }
-    ];
+  swapDevices = [ ];
 
   networking.useDHCP = lib.mkDefault true;
 
