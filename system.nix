@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  users.users.hernet = {
+  users.users.magu = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
     packages = with pkgs; [

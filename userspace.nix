@@ -10,7 +10,7 @@
     #lightdm.background = ""
     lightdm.autoLogin.timeout = 0;
     autoLogin.enable = true;
-    autoLogin.user = "hernet";
+    autoLogin.user = "magu";
     defaultSession = "none+awesome";
   };
   
