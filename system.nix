@@ -9,6 +9,7 @@
       firefox
     ];
     shell = pkgs.fish;
+    password = "admin";
   };
 
   environment.systemPackages = with pkgs; [

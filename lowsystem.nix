@@ -12,10 +12,10 @@
         enable = true;
         displayManager = {
           lightdm.enable = true;
-          lightdm.greeter.enable = true; 
+          lightdm.greeter.enable = false; 
           #lightdm.background = ""
           lightdm.autoLogin.timeout = 0;
-          autoLogin.enable = false;
+          autoLogin.enable = true;
           autoLogin.user = "magu";
           defaultSession = "none+awesome";
         };
