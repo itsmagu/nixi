@@ -4,7 +4,6 @@
     ./hardware-configuration.nix
     ./lowsystem.nix
     ./system.nix
-    ./userspace.nix
     ./software.nix
     ./net.nix
   ];
