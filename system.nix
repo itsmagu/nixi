@@ -1,15 +1,23 @@
 { config, pkgs, ... }:
 
 {
-  users.users.magu = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ];
-    packages = with pkgs; [
-      alacritty
-      firefox
-    ];
-    shell = pkgs.fish;
-    password = "admin";
+  users.users = {
+    root = {
+      description = "Alice";
+      home = "/home/alice";
+      shell = pkgs.fish;
+    };
+    magu = {
+      isNormalUser = true;
+      extraGroups = [ "wheel" ];
+      packages = with pkgs; [
+        alacritty
+        firefox
+      ];
+      shell = pkgs.fish;
+      password = "admin";
+      home = "/home/magu";
+    };
   };
 
   environment.systemPackages = with pkgs; [
