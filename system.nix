@@ -5,14 +5,17 @@
     isNormalUser = true;
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
-      vim
       alacritty
+      firefox
     ];
+    shell = fish;
   };
 
   environment.systemPackages = with pkgs; [
+    vim
     git
     wget
+    ranger
   ];
 
   time.timeZone = "Europe/Oslo";
@@ -21,5 +24,4 @@
     layout = "se";
     xkbVariant = "";
   };
-    
 }
