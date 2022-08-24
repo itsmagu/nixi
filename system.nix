@@ -3,7 +3,6 @@
 {
   users.users = {
     root = {
-      home = "/home/alice";
       shell = pkgs.fish;
     };
     magu = {
