@@ -8,7 +8,7 @@
       alacritty
       firefox
     ];
-    shell = fish;
+    shell = pkgs.fish;
   };
 
   environment.systemPackages = with pkgs; [
