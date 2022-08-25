@@ -11,10 +11,10 @@
     services.xserver = {
         enable = true;
         videoDrivers = [
-          "nouveau"
           "nvidia"
           "amdgpu"
           "radeon"
+          "fbdev"
         ];
         displayManager = {
           lightdm.enable = true;
