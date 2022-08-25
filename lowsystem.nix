@@ -10,12 +10,6 @@
     
     services.xserver = {
         enable = true;
-        videoDrivers = [
-            "amdgpu"
-            "radeon"
-            "nouveau"
-            "modesetting"
-        ];
         displayManager = {
           lightdm.enable = true;
           lightdm.greeter.enable = false; 
@@ -34,6 +28,8 @@
           ];
         };
     };
+
+    hardware.opengl.enable = true;
 
     boot.loader = {
       timeout = 2;
