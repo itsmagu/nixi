@@ -16,7 +16,7 @@
           "amdgpu"
           "radeon"
           "nvidiaLegacy390"
-        ]
+        ];
         displayManager = {
           lightdm.enable = true;
           lightdm.greeter.enable = false; 
