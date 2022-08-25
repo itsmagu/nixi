@@ -7,6 +7,7 @@
     ./software.nix
     ./net.nix
   ];
+  nixpkgs.config.allowUnfree = true;
   system.copySystemConfiguration = true;
   system.stateVersion = "22.05";
 }
