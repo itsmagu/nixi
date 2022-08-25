@@ -10,6 +10,13 @@
     
     services.xserver = {
         enable = true;
+        videoDrivers = [
+          "nouveau"
+          "nvidia"
+          "amdgpu"
+          "radeon"
+          "nvidiaLegacy390"
+        ]
         displayManager = {
           lightdm.enable = true;
           lightdm.greeter.enable = false; 
