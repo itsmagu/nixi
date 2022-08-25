@@ -20,6 +20,8 @@
           defaultSession = "none+awesome";
         };
 
+        
+
         windowManager.awesome = {
           enable = true;
           luaModules = with pkgs.luaPackages; [
