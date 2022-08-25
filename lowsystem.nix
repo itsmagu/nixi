@@ -28,4 +28,12 @@
           ];
         };
     };
+
+    boot.loader = {
+      timeout = 2;
+      grub = {
+        gfxmodeBios = "auto";
+        gfxmodeEfi = "auto";
+      };
+    };
 }
