@@ -20,7 +20,14 @@
           defaultSession = "none+awesome";
         };
 
-        
+        videoDrivers = [
+          "mesa"
+          "amdgpu"
+          "radeon"
+          "nouveau"
+          "modesetting"
+          "fbdev"
+        ];
 
         windowManager.awesome = {
           enable = true;
