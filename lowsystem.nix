@@ -21,7 +21,6 @@
         };
 
         videoDrivers = [
-          "mesa"
           "amdgpu"
           "radeon"
           "nouveau"
