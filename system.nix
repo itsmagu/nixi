@@ -8,10 +8,6 @@
     magu = {
       isNormalUser = true;
       extraGroups = [ "wheel" ];
-      packages = with pkgs; [
-        alacritty
-        firefox
-      ];
       shell = pkgs.fish;
       password = "admin";
       home = "/home/magu";
@@ -27,8 +23,8 @@
 
   time.timeZone = "Europe/Oslo";
   i18n.defaultLocale = "en_US.utf8";
-  services.xserver = {
-    layout = "se";
-    xkbVariant = "";
-  };
+  #services.xserver = {
+  #  layout = "se";
+  #  xkbVariant = "";
+  #};
 }
