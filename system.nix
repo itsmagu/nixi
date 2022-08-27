@@ -5,12 +5,12 @@
     root = {
       shell = pkgs.fish;
     };
-    magu = {
+    user = {
       isNormalUser = true;
       extraGroups = [ "wheel" ];
       shell = pkgs.fish;
       password = "admin";
-      home = "/home/magu";
+      home = "/home/user";
     };
   };
 

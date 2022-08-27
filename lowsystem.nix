@@ -1,12 +1,11 @@
 { config, pkgs, ... }:
 
 {
-    boot.plymouth = {
-        enable = false;
-    };
+    boot.plymouth.enable = false;
 
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
+    boot.loader.timeout = 2;
     
     #services.xserver = {
     #    enable = true;
@@ -30,11 +29,4 @@
 
     #hardware.opengl.enable = true;
 
-    boot.loader = {
-      timeout = 2;
-      grub = {
-        gfxmodeBios = "auto";
-        gfxmodeEfi = "auto";
-      };
-    };
 }

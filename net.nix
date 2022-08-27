@@ -2,7 +2,7 @@
 
 {
     networking = {
-        hostName = "ViSuDevice";
+        hostName = "NixosHost";
         networkmanager.enable = true;
         firewall = {
             enable = true;
